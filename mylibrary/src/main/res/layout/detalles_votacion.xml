@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.inspira.jcapiz.resumenresultados.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <!-- El título de la votación actual seleccionada va en la barra de acción -->
+
+        <TextView
+            android:id="@+id/detalles_votacion_texto_lugar_de_votacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginRight="3sp"
+            android:paddingTop="4dp"
+            android:text="@string/detalles_votacion_texto_lugar_de_votacion"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_valor_escuela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/detalles_votacion_texto_lugar_de_votacion"
+            android:layout_toEndOf="@+id/detalles_votacion_texto_lugar_de_votacion"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="UPIITA"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_texto_fecha_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/detalles_votacion_valor_escuela"
+            android:text="@string/detalles_votacion_texto_fecha_inicio"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_valor_fecha_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/detalles_votacion_texto_fecha_inicio"
+            android:layout_toEndOf="@+id/detalles_votacion_texto_fecha_inicio"
+            android:layout_toRightOf="@+id/detalles_votacion_texto_fecha_inicio"
+            android:layout_marginStart="12sp"
+            android:layout_marginLeft="12sp"
+            android:textStyle="bold"
+            android:text="21/09/2015 10:00 horas"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_texto_fecha_fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalles_votacion_texto_fecha_inicio"
+            android:text="@string/detalles_votacion_texto_fecha_fin"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_valor_fecha_fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/detalles_votacion_valor_fecha_inicio"
+            android:layout_alignStart="@+id/detalles_votacion_valor_fecha_inicio"
+            android:layout_below="@+id/detalles_votacion_valor_fecha_inicio"
+            android:textStyle="bold"
+            android:text="21/09/2015 19:00 horas"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_texto_total_participantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalles_votacion_texto_fecha_fin"
+            android:paddingTop="4sp"
+            android:layout_marginTop="20sp"
+            android:text="@string/detalles_votacion_texto_total_participantes"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_valor_total_participantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/detalles_votacion_texto_total_participantes"
+            android:layout_toRightOf="@+id/detalles_votacion_texto_total_participantes"
+            android:layout_alignTop="@+id/detalles_votacion_texto_total_participantes"
+            android:layout_marginStart="12sp"
+            android:layout_marginLeft="12sp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="528"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_texto_matricula_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalles_votacion_texto_total_participantes"
+            android:layout_marginTop="20sp"
+            android:paddingTop="4sp"
+            android:text="@string/detalles_votacion_texto_matricula_total"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_valor_matricula_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/detalles_votacion_texto_matricula_total"
+            android:layout_toRightOf="@+id/detalles_votacion_texto_matricula_total"
+            android:layout_alignTop="@+id/detalles_votacion_texto_matricula_total"
+            android:layout_alignLeft="@+id/detalles_votacion_valor_total_participantes"
+            android:layout_alignStart="@+id/detalles_votacion_valor_total_participantes"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="528"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_texto_porcentaje_participacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalles_votacion_texto_matricula_total"
+            android:layout_marginTop="20sp"
+            android:paddingTop="4sp"
+            android:text="@string/detalles_votacion_texto_porcentaje_participacion"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_valor_porcentaje_participacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/detalles_votacion_texto_porcentaje_participacion"
+            android:layout_toEndOf="@+id/detalles_votacion_texto_porcentaje_participacion"
+            android:layout_toRightOf="@+id/detalles_votacion_texto_porcentaje_participacion"
+            android:layout_alignLeft="@+id/detalles_votacion_valor_matricula_total"
+            android:layout_alignStart="@+id/detalles_votacion_valor_matricula_total"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="100%"/>
+
+        <TextView
+            android:id="@+id/detalles_votacion_texto_resumen_resultados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalles_votacion_texto_porcentaje_participacion"
+            android:layout_marginTop="20sp"
+            android:text="@string/detalles_votacion_texto_resumen_resultados"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/detalles_votacion_contenedor_tablas_de_resumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detalles_votacion_texto_resumen_resultados"
+            android:orientation="vertical"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

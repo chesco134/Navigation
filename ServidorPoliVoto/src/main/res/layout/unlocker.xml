@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:contentDescription="tul"
+        android:src="@drawable/logo_splash"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:textSize="18sp"
+        android:text="@string/texto_escribir_contraseña" />
+
+    <EditText
+        android:id="@+id/psswd"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="4sp"
+        android:paddingStart="4sp"
+        android:background="@drawable/input_box_1"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"/>
+</LinearLayout>

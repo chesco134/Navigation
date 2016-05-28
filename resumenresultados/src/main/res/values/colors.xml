@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorComfortable">#FF00b6da</color>
+    <color name="azul_2">#ff006fff</color>
+    <color name="azul_6">#ff00ff84</color>
+    <color name="shadowColor">#FF202020</color>
+    <color name="gris_9">#ff4d4d4d</color>
+    <color name="cute_button_text">#ffececec</color>
+    <color name="amarillo_1">#ffffc200</color>
+    <color name="amarillo_4">#ffc000</color>
+    <color name="polivoto_color">#ff86241f</color>
+    <color name="rojo_4">#ffff004f</color>
+    <color name="amarillo_2">#fff6ff00</color>
+    <color name="amarillo_3">#ffff7800</color>
+</resources>

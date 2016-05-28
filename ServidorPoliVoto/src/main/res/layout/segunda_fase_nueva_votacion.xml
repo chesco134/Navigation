@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginEnd="12sp"
+        android:layout_marginRight="12sp">
+        <TextView
+            android:id="@+id/segunda_fase_nueva_votacion_etiqueta_enunciado_pregunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/segunda_fase_nueva_votacion_etiqueta_enunciado_pregunta"/>
+        <TextView
+            android:id="@+id/segunda_fase_nueva_votacion_enunciado_pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/segunda_fase_nueva_votacion_etiqueta_enunciado_pregunta"
+            android:layout_toRightOf="@+id/segunda_fase_nueva_votacion_etiqueta_enunciado_pregunta"
+            android:layout_marginStart="4sp"
+            android:layout_marginLeft="4sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/segunda_fase_nueva_votacion_etiqueta_lista_de_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_alignEnd="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_alignRight="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_alignStart="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_alignLeft="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_marginTop="20sp"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:text="@string/segunda_fase_nueva_votacion_etiqueta_lista_de_opciones"/>
+    <ListView
+        android:id="@+id/segunda_fase_nueva_votacion_lista_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/segunda_fase_nueva_votacion_etiqueta_lista_de_opciones"
+        android:layout_alignEnd="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_alignRight="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_alignStart="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_alignLeft="@+id/segunda_fase_nueva_votacion_contenedor_enunciado_pregunta"
+        android:layout_marginBottom="12sp"/>
+</RelativeLayout>

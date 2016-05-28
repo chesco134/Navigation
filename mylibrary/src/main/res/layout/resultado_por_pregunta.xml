@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultado_por_pregunta_valor_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"
+        android:textColor="@color/polivoto_color"
+        android:textSize="20sp"
+        android:textStyle="bold"/> <!-- make Text roboto -->
+
+    <LinearLayout
+        android:id="@+id/resultado_por_pregunta_lista_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultado_por_pregunta_valor_pregunta"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginEnd="20sp"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/resultado_por_pregunta_texto_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resultado_por_pregunta_lista_opciones"
+        android:textSize="20sp"
+        android:paddingStart="4sp"
+        android:paddingLeft="4sp"
+        android:paddingEnd="4sp"
+        android:paddingRight="4sp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:text="@string/resultado_por_pregunta_texto_total"/>
+
+    <TextView
+        android:id="@+id/resultado_por_pregunta_valor_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultado_por_pregunta_lista_opciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingStart="4sp"
+        android:paddingLeft="4sp"
+        android:paddingEnd="4sp"
+        android:paddingRight="4sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

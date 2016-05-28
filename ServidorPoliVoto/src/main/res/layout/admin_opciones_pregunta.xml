@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/admin_opciones_pregunta_texto_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginEnd="12sp"
+        android:layout_marginRight="12sp"
+        android:background="@drawable/input_box_1"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/admin_opciones_pregunta_texto_lista_de_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_opciones_pregunta_texto_pregunta"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight="12sp"
+        android:layout_marginEnd="12sp"
+        android:layout_marginTop="12sp"
+        android:paddingTop="9sp"
+        android:text="@string/texto_opciones_de_pregunta"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/admin_opciones_preguunta_lista_de_opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_opciones_pregunta_texto_lista_de_opciones"/>
+
+</RelativeLayout>

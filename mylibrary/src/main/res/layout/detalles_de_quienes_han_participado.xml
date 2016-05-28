@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/detalles_de_quienes_han_votado_texto_no_hay_participantes"
+        android:layout_marginStart="12sp"
+        android:layout_marginLeft="12sp"
+        android:textColor="@color/polivoto_colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/usrs_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="12sp"
+        android:layout_marginBottom="12sp"
+        android:paddingStart="12sp"
+        android:paddingLeft="12sp"
+        android:paddingEnd="12sp"
+        android:paddingRight="12sp" />
+
+</RelativeLayout>

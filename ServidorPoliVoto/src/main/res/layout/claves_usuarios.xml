@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!-- CAPTURISTA -->
+
+    <TextView
+        android:id="@+id/claves_usuarios_etiqueta_capturista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/etiqueta_clave_capturista"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/clave_de_capturista"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:hint="@string/hint_clave_capturista_1"
+        android:background="@drawable/input_box_1"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/clave_de_capturista_confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_marginTop="12sp"
+        android:hint="@string/hint_clave_capturista_confirmar_1"
+        android:background="@drawable/input_box_1"
+        android:inputType="textPassword"/>
+
+    <!-- CONSULTOR -->
+
+    <TextView
+        android:id="@+id/claves_usuarios_etiqueta_consultor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/etiqueta_clave_consultor"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/clave_de_consultor"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:hint="@string/hint_clave_consultor"
+        android:background="@drawable/input_box_1"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/clave_de_consultor_confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_marginTop="12sp"
+        android:hint="@string/hint_clave_capturista_confirmar_1"
+        android:background="@drawable/input_box_1"
+        android:inputType="textPassword"/>
+
+    <!-- PARTICIPANTE -->
+
+    <TextView
+        android:id="@+id/claves_usuarios_etiqueta_participante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/etiqueta_clave_participante"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/clave_de_participante"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:hint="@string/hint_clave_participante"
+        android:background="@drawable/input_box_1"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/clave_de_participante_confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_marginTop="12sp"
+        android:hint="@string/hint_clave_capturista_confirmar_1"
+        android:background="@drawable/input_box_1"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"/>
+
+</LinearLayout>

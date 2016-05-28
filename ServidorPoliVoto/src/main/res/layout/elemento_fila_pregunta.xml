@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/elemento_fila_pregunta_enunciado_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/elemento_fila_pregunta_etiqueta_cantidad_de_opciones"
+        android:layout_toLeftOf="@+id/elemento_fila_pregunta_etiqueta_cantidad_de_opciones"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/elemento_fila_pregunta_etiqueta_cantidad_de_opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/elemento_fila_pregunta_pieza_central_derecha"
+        android:layout_marginEnd="4sp"
+        android:layout_marginRight="4sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginLeft="4sp"
+        android:text="@string/elemento_fila_pregunta_etiqueta_cantidad_opciones"/>
+    <TextView
+        android:id="@+id/elemento_fila_pregunta_pieza_central_derecha"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/elemento_fila_pregunta_cantidad_opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/elemento_fila_pregunta_pieza_central_derecha"
+        android:layout_alignEnd="@+id/elemento_fila_pregunta_etiqueta_cantidad_de_opciones"
+        android:layout_alignRight="@+id/elemento_fila_pregunta_etiqueta_cantidad_de_opciones"
+        android:layout_alignStart="@+id/elemento_fila_pregunta_etiqueta_cantidad_de_opciones"
+        android:layout_alignLeft="@+id/elemento_fila_pregunta_etiqueta_cantidad_de_opciones"
+        android:gravity="center"
+        android:textStyle="bold"/>
+</RelativeLayout>

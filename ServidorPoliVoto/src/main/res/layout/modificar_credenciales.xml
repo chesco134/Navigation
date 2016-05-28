@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/pass_actual"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"
+        android:inputType="textPassword"
+        android:background="@drawable/input_box_1"
+        android:hint="@string/texto_pass_previo"/>
+
+    <EditText
+        android:id="@+id/pass_nuevo"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_below="@+id/pass_actual"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="14sp"
+        android:inputType="textPassword"
+        android:background="@drawable/input_box_1"
+        android:hint="@string/texto_pass_nuevo"/>
+
+    <EditText
+        android:id="@+id/confirmar_pass"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_below="@+id/pass_nuevo"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="14sp"
+        android:layout_marginBottom="20sp"
+        android:inputType="textPassword"
+        android:background="@drawable/input_box_1"
+        android:hint="@string/texto_confirmar_clave"
+        android:imeOptions="actionDone"/>
+
+</RelativeLayout>

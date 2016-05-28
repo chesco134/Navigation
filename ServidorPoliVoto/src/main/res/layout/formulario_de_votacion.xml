@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/formulario_de_votacion_entrada_titulo_de_votacion"
+        android:layout_width="match_parent"
+        android:layout_height="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/input_box_1"
+        android:hint="@string/texto_ayuda_titulo_votacion"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/formulario_de_votacion_encabezado_lista_de_preguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/formulario_de_votacion_etiqueta_switch_volver_global"
+        android:layout_toLeftOf="@+id/formulario_de_votacion_etiqueta_switch_volver_global"
+        android:layout_below="@+id/formulario_de_votacion_entrada_titulo_de_votacion"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"
+        android:text="@string/texto_encabezado_lista_preguntas"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/formulario_de_votacion_etiqueta_switch_volver_global"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/formulario_de_votacion_switch_volver_global"
+        android:layout_toStartOf="@+id/formulario_de_votacion_switch_volver_global"
+        android:textSize="12sp"
+        android:paddingTop="4sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginRight="8sp"
+        android:text="@string/formulario_de_votacion_texto_volver_botacion_global"
+        android:layout_alignTop="@+id/formulario_de_votacion_switch_volver_global"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/formulario_de_votacion_switch_volver_global"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/formulario_de_votacion_entrada_titulo_de_votacion"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"/>
+
+    <ListView
+        android:id="@+id/formulario_de_votacion_lista_de_preguntas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formulario_de_votacion_encabezado_lista_de_preguntas"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="12sp"
+        android:drawSelectorOnTop="false"/>
+
+</RelativeLayout>

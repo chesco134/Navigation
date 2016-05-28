@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_boton_container"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/panel_boton_icono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/panel_boton_pivote"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"/>
+    <TextView
+        android:id="@+id/panel_boton_pivote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/panel_boton_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/panel_boton_pivote"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+</RelativeLayout>
